@@ -1,0 +1,9 @@
+index.erb (Embedded Ruby = HTML + Ruby)
+
+Création d'un tableau html avec 4 colonnes
+Vérification : <% if @users && @users.any? %> : Vérifie que @users existe et n'est pas vide
+Boucle : <% @users.each do |user| % : Pour chaque utilisateur dans @users, crée une ligne <tr>
+Affichage : <%= user.firstname %> : Affiche les données de chaque utilisateur dans les colonnes
+Fermeture de la boucle et du if
+
+La méthode to_h convertit les objets User en hash
